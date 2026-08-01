@@ -1,0 +1,145 @@
+﻿:root {
+  --rich-mahagony: #301014;
+  --smoky-rose: #A26769;
+  --muted-teal: #739E82;
+  --soft-apricorn: #F9DBBD;
+  --powder-petal: #E9D2C0;
+  --radioactive-grass: #7CDF64;
+  --darker-grass: #1e8346;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--soft-apricorn);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  background-color: var(--muted-teal);
+  height: 5rem;
+  align-items: center;
+  min-width: 360px;
+}
+
+.mainHead {
+  display: flex;
+  flex: 1;
+  width: 50%;
+  height: 5rem;
+  align-items: center;
+  margin-left: 2rem;
+  color: var(--rich-mahagony)
+}
+
+  .mainHead > a > img {
+    width: 2.5rem;
+    margin-right: 2rem;
+  }
+
+.externalLinks {
+  display: flex;
+  margin-right: 2rem;
+  gap: 2rem;
+}
+
+  .externalLinks > a > img {
+    width: 2.5rem;
+  }
+
+/*MAIN*/
+main {
+  margin: 1rem;
+  flex: 1;
+}
+
+/*FOOTER*/
+footer {
+  background-color: var(--muted-teal);
+  color: var(--rich-mahagony);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  margin-top: 4rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+  .footer-links a {
+    color: var(--rich-mahagony);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+  }
+
+    .footer-links a:hover {
+      opacity: 0.7;
+    }
+
+@media (max-width: 564px) {
+  footer {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .mainHead > h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1140px) {
+
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .mainHead {
+    flex: none;
+    width: auto;
+    margin-left: 0;
+  }
+
+    .mainHead > h1 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      white-space: nowrap;
+    }
+
+  .externalLinks {
+    margin-right: 0;
+  }
+
+  footer {
+    font-size: 1.25rem;
+  }
+}

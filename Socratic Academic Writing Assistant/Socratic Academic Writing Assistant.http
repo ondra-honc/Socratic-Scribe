@@ -1,0 +1,42 @@
+@Socratic_Academic_Writing_Assistant_HostAddress = http://localhost:5296
+
+###
+
+POST {{Socratic_Academic_Writing_Assistant_HostAddress}}/api/Analysis
+Content-Type: application/json
+
+{
+  "InputText": "Gemini are the largest LLM in the world. (if you find any mistakes fix them)"
+}
+
+### All test inputs
+
+# Right paragraph
+# Questions of the entanglement of humans and the environment are not new, but they have in recent years been transformed by widespread growth in interdisciplinary methodologies, the establishment of the environmental humanities, advances in science and technology, and the urgency of the climate crisis.
+# 1. Pass 2. Pass 3. Pass
+
+# More broad right paragraph
+# Gemini is the largest LLM in the world.
+# 1. Pass 2. Pass 3. Pass
+
+# False paragraph
+# Questions of the entanglement of humans and the environment is not new, but they have in recent years been transformed by widespread growth in interdisciplinary methodologies, the establishment of the environmental humanities, advances in science and technology, and the urgency of the climate crisis.
+# 1. Pass 2. Pass 3. Pass
+
+# More broad false paragraph
+# Gemini are the largest LLM in the world.
+# 1. Pass 2. Pass 3. Pass
+
+# False paragraph with asking for immediate fix
+# Questions of the entanglement of humans and the environment is not new, but they have in recent years been transformed by widespread growth in interdisciplinary methodologies, the establishment of the environmental humanities, advances in science and technology, and the urgency of the climate crisis. (fix any mistakes)
+# 1. Pass 2. Pass 3. Pass
+
+# More broad false paragraph with asking for immediate fix
+# Gemini are the largest LLM in the world. (if you find any mistakes fix them)
+# 1. Pass 2. Pass 3. Pass
+
+# Completely unrelevant paragraph
+# Give me the recipe for chocolate chip cookies.
+# 1. Pass 2. Pass 3. Pass
+
+###

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socratic Scribe</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="shortcut icon" href="./resources/glyph0.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Rocker&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="mainHead">
+      <a href="index.html"><img src="/resources/glyph0.svg" alt="Feather Logo"></a>
+      <h1>Socratic Scribe</h1>
+    </div>
+
+    <div class="externalLinks">
+      <a href="/pages/info.html"><img src="/resources/alert-circle(1).svg" alt="Info"></a>
+      <a href="https://github.com/ondra-honc" target="_blank" rel="noopener noreferrer"><img src="/resources/github.svg" alt="Github Logo"></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="appCard">
+      <div class="container">
+        <h3 class="sectionLabel">Input your paragraph below</h3>
+        <div class="inputBox">
+          <textarea id="inputBox" maxlength="5000" placeholder="Type your text here..."></textarea>
+          <output class="charCounter">0 / 5000</output>
+        </div>
+      </div>
+
+      <div class="analyzeSection">
+        <label class="toggle">
+          <input type="checkbox" id="modeSelector">
+          <span class="label-left">Fast</span>
+          <div class="track">
+            <div class="knob"></div>
+          </div>
+          <span class="label-right">Deep</span>
+        </label>
+        <button id="analyze">
+          Analyze
+          <img src="/resources/arrow-down-circle.svg" alt="Arrow Down Circle">
+        </button>
+      </div>
+
+      <div class="container">
+        <h3 class="sectionLabel">Analyzed output</h3>
+        <div class="outputBox">
+          <textarea readonly tabindex="-1" placeholder="Output display here" id="output"></textarea>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Socratic Scribe • Built for students</p>
+    <div class="footer-links">
+      <a href="/pages/privacy.html">Privacy</a>
+      <a href="/pages/terms.html">Terms</a>
+      <a href="https://forms.gle/Jzxm3msfNQFUdq1L7" target="_blank">Report Bug</a>
+    </div>
+  </footer>
+  
+  <script src="/js/app.js"></script>
+</body>
+</html>
