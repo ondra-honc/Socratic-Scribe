@@ -65,6 +65,8 @@ cd Socratic-Scribes
 }
 ```
 
+Alternatively you can put the API key into your environmental variables under the name "OpenRouter__ApiKey"
+
 3. Build and run the backend project:
 ```bash
 dotnet run
