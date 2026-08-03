@@ -36,7 +36,7 @@ Socratic_Academic_Writing_Assistant/
 ```
 
 ## How to run?
-* You can use this domain (working) or follow the 3 step process
+* You can use this domain ([Live App](https://debug-laxative-salutary.ngrok-free.dev/)) or follow the 3 step process
 
 ## Prerequisites
 * [.NET SDK](https://dotnet.microsoft.com/en-us/)
